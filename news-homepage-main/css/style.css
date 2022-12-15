@@ -1,0 +1,333 @@
+@charset "utf-8";
+
+
+/*tablets*/
+@media (max-width:999px) {
+    main {
+        min-height: 100vh;
+        min-width: 99.9vw;
+        display: block;
+        margin: auto;
+    }
+    @keyframes linha {
+        from {width: 2px;}
+        to {width: 99px;}
+    }
+    @keyframes linha1 {
+        from {width: 2px;}
+        to {width: 99px;}
+    }
+    @keyframes titu {
+        from {color: white;}
+        to {color: white; }
+    }
+    /*container da animaçao principal*/
+    #container {
+        min-height: 100vh;
+        min-width: 99.9vw;
+        display: flex;
+    }
+    #animacao {
+        min-height: 69vh;
+        max-width: 59vw;
+        background-color: purple;
+        border-bottom-right-radius: 69%;
+    }
+    #animacao:hover {
+        animation-name: animaçao;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: forwards;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        transition: 3s;
+        background-color: rgb(255, 0, 170);
+    }
+    /*paragrafo entro da animaçao*/
+    #paragrafo {
+        color: white;
+        font-size: 19px;
+        text-align: center;
+        margin-top: 69px;
+        text-shadow: 1px 1px 5px rgba(c, 0, 0, 0.459);
+        
+    }
+    /*div do conteudo no centro da tela ao lado da animaçao*/
+    #conteudo {
+        height: 100hvh;
+        width: 42vw;
+        margin: auto;
+        display: block;
+    }
+    #conteudomobile{
+        margin-top: -39px;
+        padding: 9px;
+        height: 129px;
+        display: none;
+    }
+    #pcontmobile {
+        text-align: center;
+        
+    }
+    #pcont {
+        text-align: center;
+        font-size: 17px;
+        
+    }
+    h1 {
+        padding-bottom: 19px;
+        text-align: center;
+        font-size: 29px;
+    }
+    /*div do telefone*/
+    #tell {
+        min-height: 399px;
+        width: 199px;
+        border-radius: 19px;
+        background-color: rgba(0, 255, 255, 0.479);
+        transform: translate(83%,29%);
+        position: absolute;
+        text-align: center;
+        font-size: 29px;
+    }
+    /*animaçao das bolinhas*/
+    #bolinhas {
+        position: absolute;
+        right: 39px;
+        top: 1px;
+        height: 99vh;
+        width: 15vw;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        gap: 111px;
+        
+    }
+    .bol {
+        height: 99px;
+        width: 99px;
+        border-radius: 50%;
+        background-color: blueviolet;
+        display: none;
+    }
+    .bol:hover {
+        animation-name: bolinhas;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #bol1 {
+        background-color: rgba(255, 0, 0, 0.493);
+        height: 289px;
+        width: 189px;
+        border-radius: 50%;
+        display: none;
+    }
+    #bol1:hover {
+        animation-name: boll;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+    }
+    #hello {
+        display: flex;
+        position: absolute;
+        justify-content: left;
+        width: 99.8vw;
+        margin-top: 9px;
+        padding-right: 9px;
+        
+    }
+    .linha {
+        height: 3px;
+        max-width: 39px;
+        background-color: white;
+        animation-name: linha;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: forwards;
+        
+    }
+    #linha1 {
+        height: 3px;
+        max-width: 39px;
+        background-color: white;
+        margin-top: 39px;
+        animation-name: linha1;
+        animation-duration: 4s;
+        -webkit-animation-fill-mode: forwards;
+    }
+    #h {
+        color: black;
+        animation-name: titu;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: forwards;
+        text-shadow: 1px 1px 3px purple;
+        font-size: 29px;
+        text-align: center;
+        padding: 9px;
+    }
+    #divb {
+        position: absolute;
+        right: -11px;
+        top: -1px;
+        height: 299px;
+        width: 259px;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-color: rgba(255, 0, 0, 0.486);
+    }
+}
+
+
+
+/*para telas de pc e telas maiores*/
+@media (min-width:999px) {
+
+    /*animaçoes titulo*/
+    @keyframes linha {
+        from {width: 2px;}
+        to {width: 99px;}
+    }
+    @keyframes linha1 {
+        from {width: 2px;}
+        to {width: 99px;}
+    }
+    @keyframes titu {
+        from {color: white;}
+        to {color: black; }
+    }
+    /*animaçoes bolinhas e do canto esquerdo top*/
+    @keyframes animaçao {
+        from {background-color: purple;height: 399px;}
+        to {background-color: rgb(255, 0, 170);height: 100vh;}
+    }
+    @keyframes bolinhas {
+        from {background-color: rgba(137, 43, 226, 0.774);}
+        to {background-color: rgb(251, 255, 0);}
+    }
+    @keyframes boll {
+        from {background-color:  rgba(255, 0, 0, 0.479)}
+        to {background-color: rgba(0, 68, 255, 0.479);}
+    }
+    /*container da animaçao principal*/
+    #container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    #animacao {
+        height: 399px;
+        width: 299px;
+        background-color: purple;
+        border-bottom-left-radius: 55%;
+        border-bottom-right-radius: 58%;
+    }
+    #animacao:hover {
+        animation-name: animaçao;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: forwards;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        transition: 3s;
+    }
+    /*paragrafo entro da animaçao*/
+    #paragrafo {
+        color: white;
+        font-size: 29px;
+        text-align: center;
+        margin-top: 99px;
+        text-shadow: 1px 1px 5px rgba(c, 0, 0, 0.459);
+    }
+    /*div do conteudo no centro da tela ao lado da animaçao*/
+    #conteudo {
+        height: 100hvh;
+        width: 49vw;
+        margin:auto;
+    }
+    #pcont {
+        text-align: center;
+        font-size: 19px;
+    }
+    h1 {
+        padding-bottom: 19px;
+        text-align: center;
+        font-size: 29px;
+    }
+    /*div do telefone*/
+    #tell {
+        height: 399px;
+        width: 199px;
+        border-radius: 19px;
+        background-color: rgba(0, 255, 255, 0.479);
+        margin: 199px 0px 0px 199px;
+        position: absolute;
+        text-align: center;
+        font-size: 29px;
+    }
+    /*animaçao das bolinhas*/
+    #bolinhas {
+        position: absolute;
+        right: 39px;
+        top: 1px;
+        height: 99vh;
+        width: 15vw;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        gap: 111px;
+        
+    }
+    .bol {
+        height: 99px;
+        width: 99px;
+        border-radius: 50%;
+        background-color: blueviolet;
+    }
+    .bol:hover {
+        animation-name: bolinhas;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    #bol1 {
+        background-color: rgba(255, 0, 0, 0.493);
+        height: 289px;
+        width: 189px;
+        border-radius: 50%;
+    }
+    #bol1:hover {
+        animation-name: boll;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+    }
+    #hello {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        width: 99.8vw;
+        margin-top: 9px;
+    }
+    .linha {
+        height: 3px;
+        width: 99px;
+        background-color: black;
+        animation-name: linha;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: forwards;
+    }
+    #linha1 {
+        height: 3px;
+        width: 99px;
+        background-color: black;
+        margin-top: 49px;
+        animation-name: linha1;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: forwards;
+    }
+    #h {
+        color: black;
+        animation-name: titu;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: forwards;
+        text-shadow: 1px 1px 3px purple;
+        font-size: 49px;
+    }
+}

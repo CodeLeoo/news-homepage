@@ -1,0 +1,140 @@
+
+@charset "utf-8";
+/*config global*/
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    min-width: 99vw;
+    background-color: antiquewhite;
+}
+
+/*telas de celulares*/
+@media (max-width:599px) {
+
+    main {
+        min-height: 100vh;
+        min-width: 99vw;
+        display: block;
+        margin: auto;
+    }
+/*container da animaçao principal*/
+#container {
+    min-height: 100vh;
+    min-width: 99vw;
+    display: flex;
+}
+#animacao {
+    max-height: 69vh;
+    max-width: 59vw;
+    background-color: purple;
+    border-bottom-right-radius: 69%;
+}
+#animacao:hover {
+    animation-name: animaçao;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(255, 0, 170);
+    min-width: 99.8vw;
+    transition: 3s;
+}
+/*paragrafo entro da animaçao*/
+#paragrafo {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 9px;
+    text-shadow: 1px 1px 5px rgba(c, 0, 0, 0.459);
+    
+}
+#conteudo {
+    height: 100hvh;
+    width: 49vw;
+    margin:auto;
+    display: none;
+}
+#conteudomobile{
+    margin-top: -39px;
+    padding: 11px;
+    height: 129px;
+    display: block;
+}
+#pcontmobile {
+    text-align: center;
+    padding-bottom: 29px;
+}
+#pcont {
+    text-align: center;
+    font-size: 19px;
+}
+h1 {
+    padding-bottom: 19px;
+    text-align: center;
+    font-size: 29px;
+}
+/*div do telefone*/
+#tell {
+    min-height: 369px;
+    width: 189px;
+    border-radius: 19px;
+    background-color: rgba(0, 255, 255, 0.479);
+    transform: translate(43%,39%);
+    position: absolute;
+    text-align: center;
+    font-size: 29px;
+}
+#hello {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 99.8vw;
+    margin-top: 9px;
+    display: none;
+}
+.linha {
+    height: 3px;
+    width: 99px;
+    background-color: black;
+    animation-name: linha;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    display: none;
+}
+#linha1 {
+    height: 3px;
+    width: 99px;
+    background-color: black;
+    margin-top: 49px;
+    animation-name: linha1;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    display: none;
+}
+#h {
+    color: black;
+    animation-name: titu;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    text-shadow: 1px 1px 3px purple;
+    font-size: 49px;
+    position: absolute;
+    right: 49px;
+    display: none;
+}
+#divb {
+    position: absolute;
+    right: -99px;
+    top: -49px;
+    height: 299px;
+    width: 299px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.486);
+    display: none;
+}
+}
+
